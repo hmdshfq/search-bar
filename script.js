@@ -1,4 +1,4 @@
-const cardTemplate = document.querySelector('[data-user-template]');
+const cardTemplate = document.querySelector('#template');
 const userCards = document.querySelector('#user-cards');
 const searchElement = document.querySelector('#search');
 let users = [];
@@ -17,8 +17,8 @@ async function fetchUsers() {
 
     users = data.map( user => {
         const card = cardTemplate.content.cloneNode(true).children[0];
-        const header = card.querySelector('[data-card-header]');
-        const body = card.querySelector('[data-card-body]');
+        const header = card.querySelector('.card-header');
+        const body = card.querySelector('.card-body');
         header.textContent = user.name;
         body.textContent = user.email;
         userCards.append(card);
