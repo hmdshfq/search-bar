@@ -1,1 +1,1 @@
-# search-bar
+# Pure JS based search-bar
