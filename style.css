@@ -1,3 +1,6 @@
+body {
+    font-family: sans-serif;
+}
 .search-wrapper {
     display: flex;
     flex-direction: column;
@@ -9,9 +12,9 @@ label {
 input {
     font-style: 1rem;
 }
-.user-cards {
+#user-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(30ch, 1fr));
     gap: 0.25rem;
     margin-top: 1rem;
 }

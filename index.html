@@ -14,29 +14,14 @@
             <input type="search" id="search">
         </section>
         <section>
-            <div class="user-cards">
-                <div class="card">
-                    <div class="header">Hammad</div>
-                    <div class="body">abncc@gmail.com</div>
-                </div>
-                <div class="card">
-                    <div class="header">Hammad</div>
-                    <div class="body">abncc@gmail.com</div>
-                </div>
-                <div class="card">
-                    <div class="header">Hammad</div>
-                    <div class="body">abncc@gmail.com</div>
-                </div>
-                <div class="card">
-                    <div class="header">Hammad</div>
-                    <div class="body">abncc@gmail.com</div>
-                </div>
-                <div class="card">
-                    <div class="header">Hammad</div>
-                    <div class="body">abncc@gmail.com</div>
-                </div>
-            </div>
+            <div id="user-cards"></div>
         </section>
+        <template data-user-template>
+            <div class="card">
+                <div class="header" data-card-header ></div>
+                <div class="body" data-card-body ></div>
+            </div>
+        </template>
     </main>
 </body>
 </html>
